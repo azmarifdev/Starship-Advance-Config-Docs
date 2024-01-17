@@ -16,17 +16,6 @@
 
 ## 🚀 Installation
 ### Prerequisites
-<a href="https://www.example.com" target="_blank">Visit this link in a new tab</a>
-
-[External link](https://external.ink/https://www.example.com)
-
-[Link text](https://www.example.com){: target="_blank"}
-
-[Link text](https://www.example.com){:target="_blank"}
-
-[Visit OpenAI](https://www.openai.com/ "OpenAI Website" target="_blank")
-
-
 
 - A [Nerd Font](https://www.nerdfonts.com/) installed and enabled in your terminal (for example, try the [FiraCode Nerd Font](https://www.nerdfonts.com/font-downloads)
 
