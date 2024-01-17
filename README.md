@@ -11,12 +11,12 @@
  - Customizable: configure every aspect of your prompt.
  - Universal: works on any shell, on any operating system.
  - Intelligent: shows relevant information at a glance.
- - Feature rich: support for all your favorite tools.
+ - Feature-rich: support for all your favorite tools.
  - Easy: quick to install – start using it in minutes.
 
 ## 🚀 Installation
 ### Prerequisites
-- A [Nerd Font](https://www.nerdfonts.com/) installed and enabled in your terminal (for example, try the [FiraCode Nerd Font](https://www.nerdfonts.com/font-downloads)
+- A [Nerd Font](https://www.nerdfonts.com/){:target="_blank"} installed and enabled in your terminal (for example, try the [FiraCode Nerd Font](https://www.nerdfonts.com/font-downloads){:target="_blank"}
 
 ### Step 1. Install Starship
 Select your operating system from the list below to view installation instructions:
@@ -49,17 +49,17 @@ curl -sS https://starship.rs/install.sh | sh
 ```
 
 - #### Windows
-Install the latest version for your system with the MSI-installers from the [releases section](https://github.com/starship/starship/releases/tag/v1.17.1).
+Install the latest version for your system with the MSI-installers from the [releases section](https://github.com/starship/starship/releases/tag/v1.17.1){:target="_blank"}.
 
 Install Starship using any of the following package managers:
 
 | **Repository** | **Instructions**                               |
 |----------------|------------------------------------------------|
-| [crates.io](https://crates.io/crates/starship)      | ``` cargo install starship --locked  ```       |
-| [Chocolatey](https://community.chocolatey.org/packages/starship)     | ``` choco install starship  ```                |
-| [conda-forge](https://anaconda.org/conda-forge/starship)    | ``` conda install -c conda-forge starship  ``` |
-| [Scoop](https://github.com/ScoopInstaller/Main/blob/master/bucket/starship.json)          | ``` scoop install starship  ```                |
-| [winget](https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Starship/Starship)         | ``` winget install --id Starship.Starship  ``` |
+| [crates.io](https://crates.io/crates/starship){:target="_blank"}      | ``` cargo install starship --locked  ```       |
+| [Chocolatey](https://community.chocolatey.org/packages/starship){:target="_blank"}     | ``` choco install starship  ```                |
+| [conda-forge](https://anaconda.org/conda-forge/starship){:target="_blank"}    | ``` conda install -c conda-forge starship  ``` |
+| [Scoop](https://github.com/ScoopInstaller/Main/blob/master/bucket/starship.json){:target="_blank"}          | ``` scoop install starship  ```                |
+| [winget](https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Starship/Starship){:target="_blank"}         | ``` winget install --id Starship.Starship  ``` |
 
 ###  Step 2. Set up your shell to use Starship
 Configure your shell to initialize starship. Select yours from the list below:
@@ -71,7 +71,7 @@ eval "$(starship init bash)"
 ```
 
 - #### Cmd
-You need to use [Clink](https://chrisant996.github.io/clink/clink.html) (v1.2.30+) with Cmd. Create a file at this path ``` %LocalAppData%\clink\starship.lua ``` with the following contents:
+You need to use [Clink](https://chrisant996.github.io/clink/clink.html){:target="_blank"} (v1.2.30+) with Cmd. Create a file at this path ``` %LocalAppData%\clink\starship.lua ``` with the following contents:
 ```
 load(io.popen('starship init cmd'):read("*a"))()
 ```
@@ -116,10 +116,10 @@ To get started configuring starship, create the following file: ``` ~/.config/st
 ```
 ~/.config && touch ~/.config/starship.toml && sudo nano starship.toml
 ```
-Then visit my [Advance config file](https://gist.github.com/azmarifdev/7a3bc1a098ce5eca1dfedae7f336cc82) and copy all config lines. then paste in ``` starship.toml ``` file and save it.
+Then visit my [Advance config file](https://gist.github.com/azmarifdev/7a3bc1a098ce5eca1dfedae7f336cc82){:target="_blank"} and copy all config lines. then paste in ``` starship.toml ``` file and save it.
 
 #### Official Documentions
-- [Starship Docs](https://starship.rs/)
-- [Configuration](https://starship.rs/config/) – learn how to configure Starship to tweak your prompt to your liking
-- [Presets](https://starship.rs/presets/) – get inspired by the pre-built configuration of others
+- [Starship Docs](https://starship.rs/){:target="_blank"}
+- [Configuration](https://starship.rs/config/){:target="_blank"} – learn how to configure Starship to tweak your prompt to your liking
+- [Presets](https://starship.rs/presets/){:target="_blank"} – get inspired by the pre-built configuration of others
 
