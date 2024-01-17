@@ -1,159 +1,122 @@
 
-## Starship-Configuration-File
+## Starship
+### CROSS-SHELL-PROMPT
+
+![App Screenshot](https://raw.githubusercontent.com/starship/starship/master/media/demo.gif)
+
+
+#### The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+
+ - Fast: it's fast – really really fast! 🚀
+ - Customizable: configure every aspect of your prompt.
+ - Universal: works on any shell, on any operating system.
+ - Intelligent: shows relevant information at a glance.
+ - Feature rich: support for all your favorite tools.
+ - Easy: quick to install – start using it in minutes.
+
+## 🚀 Installation
+### Prerequisites
+- A [Nerd Font](https://www.nerdfonts.com/) installed and enabled in your terminal (for example, try the [FiraCode Nerd Font](https://www.nerdfonts.com/font-downloads)
+
+### Step 1. Install Starship
+Select your operating system from the list below to view installation instructions:
+
+- Linux:
+Install the latest version for your system:
+```
+curl -sS https://starship.rs/install.sh | sh
 
 ```
-# ~/.config/starship.toml
+Alternatively, install Starship using any of the following package managers: 
 
-# NOTE:
-# Install font awesome for better effect, if not working i guess try install some emojis, that would be helpful.
+| **Distribution**   | **Instructions**                                                     |
+|--------------------|----------------------------------------------------------------------|
+| Any                | ``` cargo install starship --locked  ```                             |
+| Any                | ``` conda install -c conda-forge starship  ```                       |
+| Any                | ``` brew install starship  ```                                       |
+| Alpine Linux 3.13+ | ``` apk add starship  ```                                            |
+| Arch Linux         | ``` pacman -S starship  ```                                          |
+| CentOS 7+          | ``` dnf copr enable atim/starship  ``` ``` dnf install starship  ``` |
+| Gentoo             | ``` emerge app-shells/starship  ```                                  |
+| Manjaro            | ``` pacman -S starship  ```                                          |
+| NixOS              | ``` nix-env -iA nixpkgs.starship  ```                                |
+| openSUSE           | ``` zypper in starship  ```                                          |
+| Void Linux         | ``` xbps-install -S starship  ```                                    |
 
-add_newline = true
+- MacOS
+Install the latest version for your system:
+```
+curl -sS https://starship.rs/install.sh | sh
+```
 
-[character]
-success_symbol = "[➟](bold blue) "
-error_symbol = "[✗](bold red) "
+- Windows
+Install the latest version for your system with the MSI-installers from the [releases section](https://github.com/starship/starship/releases/tag/v1.17.1).
 
-# Hide the username. The username will only show in certain scenarios
-[username]
-disabled = false
+Install Starship using any of the following package managers:
 
-[hostname]
-ssh_only = false
-# suffix = ">>"
-trim_at = ".companyname.com"
-disabled = false
-style = "bold #ee00ff"
+| **Repository** | **Instructions**                               |
+|----------------|------------------------------------------------|
+| [crates.io](https://crates.io/crates/starship)      | ``` cargo install starship --locked  ```       |
+| [Chocolatey](https://community.chocolatey.org/packages/starship)     | ``` choco install starship  ```                |
+| [conda-forge](https://anaconda.org/conda-forge/starship)    | ``` conda install -c conda-forge starship  ``` |
+| [Scoop](https://github.com/ScoopInstaller/Main/blob/master/bucket/starship.json)          | ``` scoop install starship  ```                |
+| [winget](https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/Starship/Starship)         | ``` winget install --id Starship.Starship  ``` |
 
-[directory]
-truncation_length = 10
-truncate_to_repo = true
-format = "[$path]($style)[$read_only]($read_only_style) "
-read_only = " 🔒"
-read_only_style = "red"
-style = "bold italic blue"
+###  Step 2. Set up your shell to use Starship
+Configure your shell to initialize starship. Select yours from the list below:
 
-[cmd_duration]
-min_time = 4
-show_milliseconds = false
-disabled = false
-format = "[ $duration](bold yellow)"
-style = "bold italic blue"
+- Bash
+Add the following to the end of ```~/.bashrc```:
+```
+eval "$(starship init bash)"
+```
 
-[docker_context]
-format = "[$context](blue bold)"
-symbol = ' '
-
-[kubernetes]
-format = 'on [☸ $context \($namespace\)](dimmed green) '
-disabled = false
-[kubernetes.context_aliases]
-"dev.local.cluster.k8s" = "dev"
-".*/openshift-cluster/.*" = "openshift"
-"gke_.*_(?P<cluster>[\\w-]+)" = "gke-$cluster"
-
-[azure]
-symbol = 'ﴃ '
-
-[aws]
-symbol = " "
-
-[conda]
-symbol = " "
-
-[dart]
-symbol = " "
-
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
-
-[git_branch]
-symbol = " "
-truncation_length = 4
-truncation_symbol = ""
-
-[git_commit]
-commit_hash_length = 4
-tag_symbol = "ﰖ "
-
-[git_state]
-format = '[\($state( $progress_current of $progress_total)\)]($style) '
-cherry_pick = "[❯❯ PICKING](bold red)"
-
-[git_status]
-conflicted = '${count}⚠ '
-ahead = "⇡${count}"
-behind = "⇣${count}"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-untracked = '${count}? '
-stashed = '${count} '
-modified = '${count} '
-staged = '${count} '
-renamed = '${count} '
-deleted = '${count} '
-# up_to_date = '✓ '
-
-[hg_branch]
-format = "[$branch](bold purple)"
-truncation_length = 4
-truncation_symbol = ""
-
-[golang]
-format = "[ $version](bold cyan) "
-
-[helm]
-format = "[⎈ $version](bold white) "
-
-[java]
-symbol = "☕ "
-
-[julia]
-symbol = " "
-
-[package]
-symbol = ' '
-
-[lua]
-format = "[ $version](bold blue) "
-
-[memory_usage]
-symbol = " "
-
-[nim]
-symbol = " "
-
-[nix_shell]
-symbol = " "
-
-[perl]
-symbol = " "
-
-[php]
-symbol = " "
-
-[python]
-symbol = " "
-
-[ruby]
-symbol = " "
-
-[rust]
-symbol = " "
-
-[scala]
-symbol = " "
-
-[shlvl]
-symbol = " "
-
-[swift]
-symbol = "ﯣ "
-
-[nodejs]
-format = "[ $version](bold green) "
-detect_files = ["package.json", ".node-version"]
-detect_folders = ["node_modules"]
+- Cmd
+You need to use [Clink](https://chrisant996.github.io/clink/clink.html) (v1.2.30+) with Cmd. Create a file at this path ``` %LocalAppData%\clink\starship.lua ``` with the following contents:
+```
+load(io.popen('starship init cmd'):read("*a"))()
+```
+- Fish
+Add the following to the end of ``` ~/.config/fish/config.fish ```:
 
 ```
+starship init fish | source
+```
+
+- Nushell
+Add the following to the end of your Nushell env file (find it by running ``` $nu.env-path ``` in Nushell):
+```
+mkdir ~/.cache/starship
+starship init nu | save -f ~/.cache/starship/init.nu
+
+```
+And add the following to the end of your Nushell configuration (find it by running ``` $nu.config-path ``` ):
+```
+use ~/.cache/starship/init.nu
+```
+- PowerShell
+Add the following to the end of your PowerShell configuration (find it by running ``` $PROFILE ``` ):
+```
+Invoke-Expression (&starship init powershell)
+```
+- Zsh
+Add the following to the end of ``` ~/.zshrc ```:
+
+```
+eval "$(starship init zsh)" 
+```
+
+###  Step 3. Configure Starship
+
+Start a new shell instance, and you should see your beautiful new shell prompt. If you're happy with the defaults, enjoy!
+
+If you're looking to further customize Starship:
+
+#### You can use my advance config file
+- [Advance config file](https://gist.github.com/azmarifdev/7a3bc1a098ce5eca1dfedae7f336cc82)
+
+#### Official Documentions
+
+- [Configuration](https://starship.rs/config/) – learn how to configure Starship to tweak your prompt to your liking
+- [Presets](https://starship.rs/presets/) – get inspired by the pre-built configuration of others
+
