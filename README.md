@@ -23,7 +23,21 @@
 Select your operating system from the list below to view installation instructions:
 
 - #### Linux:
-Install the latest version for your system:
+First, install curl:
+- Ubuntu/Mint:
+```
+sudo apt install curl
+```
+- Fedora:
+```
+sudo dnf install curl
+```
+- Manjaro/Arch:
+```
+sudo pacman -S curl
+```
+
+Then Install the latest version for your system:
 ```
 curl -sS https://starship.rs/install.sh | sh
 ```
