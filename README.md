@@ -126,14 +126,14 @@ Start a new shell instance, and you should see your beautiful new shell prompt. 
 
 If you're looking to further customize Starship:
 
-#### You can use my advance config file
+#### You can use my advanced config file
 To get started configuring starship, create the following file: ``` ~/.config/starship.toml ```.
 ```
 ~/.config && touch ~/.config/starship.toml && sudo nano starship.toml
 ```
-Then visit my [Advance config file](https://gist.github.com/azmarifdev/7a3bc1a098ce5eca1dfedae7f336cc82) and copy all config lines. then paste in ``` starship.toml ``` file and save it.
+Then visit my [Advance config file](https://gist.github.com/azmarifdev/7a3bc1a098ce5eca1dfedae7f336cc82) and copy all config lines. then paste in ``` starship.toml ``` file and save it. (Press Ctrl + O then Press Enter to Save And Press Ctrl + X to Exit)
 
-#### Official Documentions
+#### Official Documents
 - [Starship Docs](https://starship.rs/)
 - [Configuration](https://starship.rs/config/) – learn how to configure Starship to tweak your prompt to your liking
 - [Presets](https://starship.rs/presets/) – get inspired by the pre-built configuration of others
