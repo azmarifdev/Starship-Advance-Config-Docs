@@ -23,7 +23,7 @@
 Select your operating system from the list below to view installation instructions:
 
 - #### Linux:
-First, install curl:
+#### First, install curl:
 - Ubuntu/Mint:
 ```
 sudo apt install curl
