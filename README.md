@@ -142,3 +142,4 @@ Follow this shortcut if you don't know how to save and exit the nano file.
 - [Configuration](https://starship.rs/config/) – learn how to configure Starship to tweak your prompt to your liking
 - [Presets](https://starship.rs/presets/) – get inspired by the pre-built configuration of others
 
+#### Enjoy!
