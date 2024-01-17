@@ -21,12 +21,12 @@
 ### Step 1. Install Starship
 Select your operating system from the list below to view installation instructions:
 
-- Linux:
+- #### Linux:
 Install the latest version for your system:
 ```
 curl -sS https://starship.rs/install.sh | sh
 ```
-Alternatively, install Starship using any of the following package managers: 
+#### Alternatively, install Starship using any of the following package managers: 
 
 | **Distribution**   | **Instructions**                                                     |
 |--------------------|----------------------------------------------------------------------|
@@ -42,13 +42,13 @@ Alternatively, install Starship using any of the following package managers:
 | openSUSE           | ``` zypper in starship  ```                                          |
 | Void Linux         | ``` xbps-install -S starship  ```                                    |
 
-- MacOS
+- #### MacOS
 Install the latest version for your system:
 ```
 curl -sS https://starship.rs/install.sh | sh
 ```
 
-- Windows
+- #### Windows
 Install the latest version for your system with the MSI-installers from the [releases section](https://github.com/starship/starship/releases/tag/v1.17.1).
 
 Install Starship using any of the following package managers:
@@ -64,25 +64,25 @@ Install Starship using any of the following package managers:
 ###  Step 2. Set up your shell to use Starship
 Configure your shell to initialize starship. Select yours from the list below:
 
-- Bash
+- #### Bash
 Add the following to the end of ```~/.bashrc```:
 ```
 eval "$(starship init bash)"
 ```
 
-- Cmd
+- #### Cmd
 You need to use [Clink](https://chrisant996.github.io/clink/clink.html) (v1.2.30+) with Cmd. Create a file at this path ``` %LocalAppData%\clink\starship.lua ``` with the following contents:
 ```
 load(io.popen('starship init cmd'):read("*a"))()
 ```
-- Fish
+- #### Fish
 Add the following to the end of ``` ~/.config/fish/config.fish ```:
 
 ```
 starship init fish | source
 ```
 
-- Nushell
+- #### Nushell
 Add the following to the end of your Nushell env file (find it by running ``` $nu.env-path ``` in Nushell):
 ```
 mkdir ~/.cache/starship
@@ -93,12 +93,12 @@ And add the following to the end of your Nushell configuration (find it by runni
 ```
 use ~/.cache/starship/init.nu
 ```
-- PowerShell
+- #### PowerShell
 Add the following to the end of your PowerShell configuration (find it by running ``` $PROFILE ``` ):
 ```
 Invoke-Expression (&starship init powershell)
 ```
-- Zsh
+- #### Zsh
 Add the following to the end of ``` ~/.zshrc ```:
 
 ```
