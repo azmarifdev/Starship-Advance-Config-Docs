@@ -131,7 +131,10 @@ To get started configuring starship, create the following file: ``` ~/.config/st
 ```
 ~/.config && touch ~/.config/starship.toml && sudo nano starship.toml
 ```
-Then visit my [Advance config file](https://gist.github.com/azmarifdev/7a3bc1a098ce5eca1dfedae7f336cc82) and copy all config lines. then paste in ``` starship.toml ``` file and save it. (Press Ctrl + O then Press Enter to Save And Press Ctrl + X to Exit)
+Then visit my [Advance config file](https://gist.github.com/azmarifdev/7a3bc1a098ce5eca1dfedae7f336cc82) and copy all config lines. then paste in ``` starship.toml ``` file and save it.
+
+Follow this shortcut if you don't know how to save and exit the nano file. 
+(Press Ctrl + O then Press Enter to Save And Press Ctrl + X to Exit)
 
 #### Official Documents
 - [Starship Docs](https://starship.rs/)
