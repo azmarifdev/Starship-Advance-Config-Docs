@@ -1,2 +1,159 @@
-# Starship-Configuration-File
-Starship advance config file
+
+## Starship-Configuration-File
+
+```
+# ~/.config/starship.toml
+
+# NOTE:
+# Install font awesome for better effect, if not working i guess try install some emojis, that would be helpful.
+
+add_newline = true
+
+[character]
+success_symbol = "[➟](bold blue) "
+error_symbol = "[✗](bold red) "
+
+# Hide the username. The username will only show in certain scenarios
+[username]
+disabled = false
+
+[hostname]
+ssh_only = false
+# suffix = ">>"
+trim_at = ".companyname.com"
+disabled = false
+style = "bold #ee00ff"
+
+[directory]
+truncation_length = 10
+truncate_to_repo = true
+format = "[$path]($style)[$read_only]($read_only_style) "
+read_only = " 🔒"
+read_only_style = "red"
+style = "bold italic blue"
+
+[cmd_duration]
+min_time = 4
+show_milliseconds = false
+disabled = false
+format = "[ $duration](bold yellow)"
+style = "bold italic blue"
+
+[docker_context]
+format = "[$context](blue bold)"
+symbol = ' '
+
+[kubernetes]
+format = 'on [☸ $context \($namespace\)](dimmed green) '
+disabled = false
+[kubernetes.context_aliases]
+"dev.local.cluster.k8s" = "dev"
+".*/openshift-cluster/.*" = "openshift"
+"gke_.*_(?P<cluster>[\\w-]+)" = "gke-$cluster"
+
+[azure]
+symbol = 'ﴃ '
+
+[aws]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+symbol = " "
+truncation_length = 4
+truncation_symbol = ""
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = "ﰖ "
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = "[❯❯ PICKING](bold red)"
+
+[git_status]
+conflicted = '${count}⚠ '
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = '${count}? '
+stashed = '${count} '
+modified = '${count} '
+staged = '${count} '
+renamed = '${count} '
+deleted = '${count} '
+# up_to_date = '✓ '
+
+[hg_branch]
+format = "[$branch](bold purple)"
+truncation_length = 4
+truncation_symbol = ""
+
+[golang]
+format = "[ $version](bold cyan) "
+
+[helm]
+format = "[⎈ $version](bold white) "
+
+[java]
+symbol = "☕ "
+
+[julia]
+symbol = " "
+
+[package]
+symbol = ' '
+
+[lua]
+format = "[ $version](bold blue) "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[shlvl]
+symbol = " "
+
+[swift]
+symbol = "ﯣ "
+
+[nodejs]
+format = "[ $version](bold green) "
+detect_files = ["package.json", ".node-version"]
+detect_folders = ["node_modules"]
+
+```
