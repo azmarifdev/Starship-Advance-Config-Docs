@@ -25,7 +25,6 @@ Select your operating system from the list below to view installation instructio
 Install the latest version for your system:
 ```
 curl -sS https://starship.rs/install.sh | sh
-
 ```
 Alternatively, install Starship using any of the following package managers: 
 
