@@ -16,7 +16,7 @@
 
 ## 🚀 Installation
 ### Prerequisites
-- A [Nerd Font](https://www.nerdfonts.com/){:target="_blank"} installed and enabled in your terminal (for example, try the [FiraCode Nerd Font](https://www.nerdfonts.com/font-downloads){:target="_blank"}
+- A [Nerd Font](https://www.nerdfonts.com/){target="_blank"} installed and enabled in your terminal (for example, try the [FiraCode Nerd Font](https://www.nerdfonts.com/font-downloads){target="_blank"}
 
 ### Step 1. Install Starship
 Select your operating system from the list below to view installation instructions:
