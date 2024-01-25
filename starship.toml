@@ -1,7 +1,7 @@
 # ~/.config/starship.toml
 
 # NOTE:
-# Install font awesome for better effect, if it's not working try to install some emojis. That would be helpful.
+# Install font awesome for better effect, if not working i guess try install some emojis, that would be helpful.
 
 add_newline = true
 
@@ -15,13 +15,12 @@ disabled = false
 
 [hostname]
 ssh_only = false
-# suffix = ">>"
+format =  "[$hostname](bold #ee00ff) [❯](bold green) "
 trim_at = ".companyname.com"
 disabled = false
-style = "bold #ee00ff"
 
 [directory]
-truncation_length = 10
+truncation_length = 5
 truncate_to_repo = true
 format = "[$path]($style)[$read_only]($read_only_style) "
 read_only = " 🔒"
@@ -67,7 +66,7 @@ symbol = " "
 
 [git_branch]
 symbol = " "
-truncation_length = 4
+truncation_length = 10
 truncation_symbol = ""
 
 [git_commit]
@@ -93,7 +92,7 @@ deleted = '${count} '
 
 [hg_branch]
 format = "[$branch](bold purple)"
-truncation_length = 4
+truncation_length = 10
 truncation_symbol = ""
 
 [golang]
